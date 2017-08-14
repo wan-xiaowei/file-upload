@@ -1,0 +1,15 @@
+server:
+  port: 8050
+eureka:
+  client:
+    service-url:
+       defaultZone : http://root:root@discovery2:8762/eureka/,http://root:root@discovery:8761/eureka/
+spring:
+  application:
+    name: file-upload
+  http:
+    multipart:
+      max-file-size: 2000Mb
+      max-request-size: 2500Mb
+
+#zuul大文件上传 需要配置
