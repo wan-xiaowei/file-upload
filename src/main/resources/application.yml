@@ -11,5 +11,7 @@ spring:
     multipart:
       max-file-size: 2000Mb
       max-request-size: 2500Mb
-
-#zuul大文件上传 需要配置
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 6000
+ribbon:
+  ConnectTimeout: 3000
+  ReadTimeout: 60000
